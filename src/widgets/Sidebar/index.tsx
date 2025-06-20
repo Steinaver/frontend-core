@@ -1,3 +1,3 @@
 export {
     Sidebar,
-} from "./ui/Sidebar/Sidebar";
+} from './ui/Sidebar/Sidebar';
