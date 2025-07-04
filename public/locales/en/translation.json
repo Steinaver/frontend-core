@@ -2,5 +2,7 @@
     "language": "English",
     "page_not_found": "Page not found",
     "unexpected_error": "Unexpected error",
-    "refresh_page": "Refresh page"
+    "refresh_page": "Refresh page",
+    "main_page": "Main page",
+    "about_us": "About us"
 }

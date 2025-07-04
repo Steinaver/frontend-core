@@ -2,5 +2,7 @@
     "language": "Русский",
     "page_not_found": "Страница не найдена",
     "unexpected_error": "Произошла непредвиденная ошибка",
-    "refresh_page": "Обновить страницу"
+    "refresh_page": "Обновить страницу",
+    "main_page": "Главная",
+    "about_us": "О сайте"
 }
