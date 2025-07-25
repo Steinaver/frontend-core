@@ -25,7 +25,6 @@ export const Modal = (props: ModalProps) => {
 
     const [isClosing, setIsClosing] = useState(false);
     const timerRef = useRef<ReturnType<typeof setTimeout>>();
-    const { theme } = useTheme();
 
     const closeHandler = useCallback(() => {
         if (onClose) {
@@ -65,7 +64,7 @@ export const Modal = (props: ModalProps) => {
 
     return (
         <Portal>
-            <div className={classNames(classes.Modal, mods, [className, classes[theme]])}>
+            <div className={classNames(classes.Modal, mods, [className])}>
                 <div className={classes.overlay} onClick={closeHandler}>
                     <div className={classes.content} onClick={onContentClick}>
                         {children}
