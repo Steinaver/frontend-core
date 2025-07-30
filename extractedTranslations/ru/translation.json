@@ -2,11 +2,14 @@
   "about_us": "about_us",
   "language": "language",
   "language_code": "language_code",
+  "login": "login",
   "main_page": "main_page",
   "main_page1": "main_page1",
   "page_not_found": "page_not_found",
+  "password": "password",
   "refresh_page": "refresh_page",
   "toggle": "toggle",
   "unexpected_error": "unexpected_error",
+  "username": "username",
   "Войти": "Войти"
 }

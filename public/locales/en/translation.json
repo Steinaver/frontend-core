@@ -5,5 +5,8 @@
     "refresh_page": "Refresh page",
     "main_page": "Main",
     "about_us": "About us",
-    "language_code": "En"
+    "language_code": "En",
+    "login": "Sign in",
+    "username": "Enter name",
+    "password": "Enter password"
 }
