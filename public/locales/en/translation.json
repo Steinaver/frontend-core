@@ -6,7 +6,10 @@
     "main_page": "Main",
     "about_us": "About us",
     "language_code": "En",
-    "login": "Sign in",
-    "username": "Enter name",
-    "password": "Enter password"
+    "login": "Login",
+    "username": "Enter username",
+    "password": "Enter password",
+    "auth_form": "Authorization form",
+    "auth_error": "Uncorrect login or password",
+    "logout": "Logout"
 }

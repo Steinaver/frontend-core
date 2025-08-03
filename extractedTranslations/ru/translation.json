@@ -1,8 +1,11 @@
 {
   "about_us": "about_us",
+  "auth_error": "auth_error",
+  "auth_form": "auth_form",
   "language": "language",
   "language_code": "language_code",
   "login": "login",
+  "logout": "logout",
   "main_page": "main_page",
   "main_page1": "main_page1",
   "page_not_found": "page_not_found",
@@ -11,5 +14,6 @@
   "toggle": "toggle",
   "unexpected_error": "unexpected_error",
   "username": "username",
-  "Войти": "Войти"
+  "Войти": "Войти",
+  "Вы ввели неверный логин или пароль": "Вы ввели неверный логин или пароль"
 }
