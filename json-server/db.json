@@ -25,5 +25,14 @@
             "password": "123"
         }
     ],
-    "profile": { "name": "typicode" }
+    "profile": {
+        "first": "John",
+        "lastname": "Waltman",
+        "age": 18,
+        "currency": "USD",
+        "country": "Ukraine",
+        "city": "Kyiv",
+        "username": "frontendev",
+        "avatar": "https://static.vecteezy.com/system/resources/previews/005/544/718/non_2x/profile-icon-design-free-vector.jpg"
+    }
 }
