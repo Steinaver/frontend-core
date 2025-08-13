@@ -1,7 +1,7 @@
 {
-  "profile_page": "",
-    "profile": "profile",
   "edit": "edit",
   "firstname": "firstname",
-  "lastname": "lastname"
+  "lastname": "lastname",
+  "profile": "profile",
+  "profile_page": ""
 }
