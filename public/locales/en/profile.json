@@ -2,5 +2,13 @@
     "profile": "Profile",
     "edit": "Edit",
     "firstname": "Your firstname",
-    "lastname": "Your lastname"
+    "lastname": "Your lastname",
+    "unexpected_error": "An error occurred while loading the profile",
+    "refresh_page": "Please try refreshing the page",
+    "cancel": "Cancel",
+    "save": "Save",
+    "age": "Your age",
+    "city": "City",
+    "username": "Username",
+    "avatar": "Avatar link"
 }

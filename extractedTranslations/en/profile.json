@@ -1,7 +1,16 @@
 {
+  "age": "age",
+  "avatar": "avatar",
+  "cancel": "cancel",
+  "city": "city",
+  "currency": "currency",
   "edit": "edit",
   "firstname": "firstname",
   "lastname": "lastname",
   "profile": "profile",
-  "profile_page": ""
+  "profile_page": "",
+  "refresh_page": "refresh_page",
+  "save": "save",
+  "unexpected_error": "",
+  "username": "username"
 }

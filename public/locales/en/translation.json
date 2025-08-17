@@ -12,5 +12,7 @@
     "password": "Enter password",
     "auth_form": "Authorization form",
     "auth_error": "Uncorrect login or password",
-    "logout": "Logout"
+    "logout": "Logout",
+    "currency": "Choose currency",
+    "country": "Choose country"
 }
