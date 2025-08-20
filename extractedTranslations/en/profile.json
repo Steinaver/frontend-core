@@ -6,11 +6,16 @@
   "currency": "currency",
   "edit": "edit",
   "firstname": "firstname",
+  "incorrect_age": "incorrect_age",
+  "incorrect_country": "incorrect_country",
+  "incorrect_name": "incorrect_name",
   "lastname": "lastname",
+  "no_data": "no_data",
   "profile": "profile",
   "profile_page": "",
   "refresh_page": "refresh_page",
   "save": "save",
+  "server_error": "server_error",
   "unexpected_error": "",
   "username": "username"
 }

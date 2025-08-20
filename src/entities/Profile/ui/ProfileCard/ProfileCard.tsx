@@ -6,6 +6,7 @@ import { Loader } from 'shared/ui/Loader/Loader';
 import { Avatar } from 'shared/ui/Avatar/Avatar';
 import { Currency, CurrencySelect } from 'entities/Currency';
 import { Country, CountrySelect } from 'entities/Country';
+import AvatarStorybook from 'shared/assets/tests/storybook.jpg';
 import { Profile } from '../../model/types/profile';
 import classes from './ProfileCard.module.scss';
 
@@ -72,6 +73,11 @@ export const ProfileCard = (props: ProfileCardProps) => {
     return (
         <div className={classNames(classes.ProfileCard, mods, [className])}>
             <div className={classes.data}>
+                {__PROJECT__ === 'storybook' && (
+                    <div className={classes.avatarWrapper}>
+                        <Avatar src={AvatarStorybook} />
+                    </div>
+                )}
                 {data?.avatar && (
                     <div className={classes.avatarWrapper}>
                         <Avatar src={data?.avatar} />

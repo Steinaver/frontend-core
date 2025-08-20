@@ -11,7 +11,7 @@
     "username": "Enter username",
     "password": "Enter password",
     "auth_form": "Authorization form",
-    "auth_error": "Uncorrect login or password",
+    "auth_error": "Incorrect login or password",
     "logout": "Logout",
     "currency": "Choose currency",
     "country": "Choose country"

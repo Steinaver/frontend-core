@@ -10,5 +10,10 @@
     "age": "Your age",
     "city": "City",
     "username": "Username",
-    "avatar": "Avatar link"
+    "avatar": "Avatar link",
+    "server_error": "Server error while saving",
+    "no_data": "No data provided",
+    "incorrect_name": "First and last names are required",
+    "incorrect_age": "Incorrect age",
+    "incorrect_country": "Incorrect region"
 }
