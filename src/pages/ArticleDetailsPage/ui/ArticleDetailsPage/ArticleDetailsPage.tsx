@@ -1,6 +1,8 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
 import { memo } from 'react';
+import { ArticleDetails } from 'entities/Article';
+import { useParams } from 'react-router-dom';
 import classes from './ArticleDetailsPage.module.scss';
 
 interface ArticleDetailsPageProps {
@@ -12,11 +14,20 @@ const ArticleDetailsPage = (props: ArticleDetailsPageProps) => {
         className,
     } = props;
 
-    const { t } = useTranslation('article');
+    const { t } = useTranslation('article-details');
+    const { id } = useParams<{id: string}>();
+
+    if (!id) {
+        return (
+            <div className={classNames(classes.ArticleDetailsPage, {}, [className])}>
+                {t('article_not_found')}
+            </div>
+        );
+    }
 
     return (
         <div className={classNames(classes.ArticleDetailsPage, {}, [className])}>
-            Article Details Page
+            <ArticleDetails id={id} />
         </div>
     );
 };

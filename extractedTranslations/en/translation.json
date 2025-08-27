@@ -2,6 +2,8 @@
   "": "",
   "about_us": "about_us",
   "age": "age",
+  "art": "art",
+  "article_not_found": "article_not_found",
   "auth_error": "auth_error",
   "auth_form": "auth_form",
   "avatar": "avatar",
