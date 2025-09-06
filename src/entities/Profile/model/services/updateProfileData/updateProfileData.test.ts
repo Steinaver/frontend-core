@@ -12,6 +12,7 @@ const data = {
     lastname: 'Waltman',
     city: 'Vilnius',
     currency: Currency.USD,
+    id: '1',
 };
 
 describe('updateProfileData.test', () => {

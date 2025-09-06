@@ -15,5 +15,8 @@
     "auth_error": "Incorrect login or password",
     "logout": "Logout",
     "currency": "Choose currency",
-    "country": "Choose country"
+    "country": "Choose country",
+    "no_comments": "No comments",
+    "comment_text": "Enter comment text",
+    "post": "Post"
 }
