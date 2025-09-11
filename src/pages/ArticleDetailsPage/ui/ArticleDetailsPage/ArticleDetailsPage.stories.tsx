@@ -22,6 +22,10 @@ const article: Article = {
     img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMw1q3gI4szFY7I8Yb0EO3SzwbWmZakod15g&s',
     views: 1022,
     createdAt: '16.08.2025',
+    user: {
+        id: '1',
+        username: 'frontendev',
+    },
     type: [ArticleType.IT],
     blocks: [
         {
