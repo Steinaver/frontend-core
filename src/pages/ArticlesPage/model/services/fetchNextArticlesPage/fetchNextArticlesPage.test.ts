@@ -23,7 +23,7 @@ describe('fetchNextArticlesPage.test', () => {
         expect(fetchArticlesList).toBeCalledWith({ page: 3 });
     });
 
-    test('fetchArticleList not called', async () => {
+    test('hasMore false', async () => {
         const thunk = new TestAsyncThunk(fetchNextArticlesPage, {
             articlesPage: {
                 page: 2,
@@ -41,7 +41,7 @@ describe('fetchNextArticlesPage.test', () => {
         expect(fetchArticlesList).not.toHaveBeenCalled();
     });
 
-    test('fetchArticleList not called', async () => {
+    test('isLoading true', async () => {
         const thunk = new TestAsyncThunk(fetchNextArticlesPage, {
             articlesPage: {
                 page: 2,
