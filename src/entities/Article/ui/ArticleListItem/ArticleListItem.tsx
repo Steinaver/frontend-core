@@ -9,6 +9,7 @@ import { Avatar } from 'shared/ui/Avatar/Avatar';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { useNavigate } from 'react-router-dom';
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
+import AvatarStorybook from 'shared/assets/tests/storybook.jpg';
 import { ArticleTextBlockComponent } from '../ArticleTextBlockComponent/ArticleTextBlockComponent';
 import classes from './ArticleListItem.module.scss';
 import {
@@ -52,7 +53,11 @@ export const ArticleListItem = memo((props: ArticleListItemProps) => {
             <div className={classNames(classes.ArticleListItem, {}, [className, classes[view]])}>
                 <Card className={classes.card}>
                     <div className={classes.header}>
-                        <Avatar size={30} src={article.user.avatar} />
+                        {
+                            __PROJECT__ !== 'storybook'
+                                ? <Avatar size={30} src={article.user.avatar} />
+                                : <Avatar size={30} src={AvatarStorybook} />
+                        }
                         <Text text={article.user.username} className={classes.username} />
                         <Text text={article.createdAt} className={classes.date} />
                     </div>
