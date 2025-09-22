@@ -1,0 +1,21 @@
+.ArticlesPageFilters {
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+.sortWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}
+
+.search {
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}

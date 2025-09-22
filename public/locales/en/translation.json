@@ -18,5 +18,18 @@
     "country": "Choose country",
     "no_comments": "No comments",
     "comment_text": "Enter comment text",
-    "post": "Post"
+    "post": "Post",
+    "sort_by": "Sort by",
+    "search": "Search",
+    "in": "in",
+    "ascend": "ascending order",
+    "descend": "descending order",
+    "creation_date": "creation date",
+    "views": "views",
+    "title": "title",
+    "all_articles": "All articles",
+    "programming": "Programming",
+    "economics": "Economics",
+    "science": "Science",
+    "articles_not_found": "No articles found"
 }
