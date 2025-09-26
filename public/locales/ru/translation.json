@@ -31,5 +31,9 @@
     "programming": "Программирование",
     "economics": "Экономика",
     "science": "Наука",
-    "articles_not_found": "Статьи не найдены"
+    "articles_not_found": "Статьи не найдены",
+    "creating_article": "Создание новой статьи",
+    "editing_article": "Редактирование статьи с id =",
+    "logo": "React App",
+    "create_article": "Создать статью"
 }

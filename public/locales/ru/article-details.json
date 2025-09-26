@@ -3,5 +3,6 @@
     "unexpected_error": "Произошла ошибка при загрузке статьи",
     "comments": "Комментарии",
     "go_back": "Назад к списку",
-    "recommendations": "Рекомендуем"
+    "recommendations": "Рекомендуем",
+    "edit": "Редактировать"
 }

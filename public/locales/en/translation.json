@@ -31,5 +31,9 @@
     "programming": "Programming",
     "economics": "Economics",
     "science": "Science",
-    "articles_not_found": "No articles found"
+    "articles_not_found": "No articles found",
+    "creating_article": "Creating a new article",
+    "editing_article": "Editing an article with id =",
+    "logo": "React App",
+    "create_article": "Create an article"
 }
