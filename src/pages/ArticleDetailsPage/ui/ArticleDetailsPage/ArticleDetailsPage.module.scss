@@ -2,24 +2,8 @@
     min-height: 100%;
 }
 
-.article {
-    &:not(:last-child) {
-        margin-bottom: 20px;
-    }
-}
-
-.commentsTitle {
-    &:not(:last-child) {
-        margin-bottom: 20px;
-    }
-}
-
 .recommendations {
     flex-wrap: nowrap;
     overflow-y: hidden;
     overflow-x: auto;
-
-    &:not(:last-child) {
-        margin-bottom: 20px;
-    }
 }

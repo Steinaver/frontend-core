@@ -3,35 +3,5 @@
 }
 
 .avatar {
-    margin: 0 auto 20px;
-}
-
-.title {
-    &:not(:last-child) {
-        margin-bottom: 15px;
-    }
-}
-
-.skeleton {
-    &:not(:last-child) {
-        margin-bottom: 15px;
-    }
-}
-
-.articleInfo {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.avatarWrapper {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-.block {
-    &:not(:last-child) {
-        margin-bottom: 16px;
-    }
+    margin: 0 auto;
 }
