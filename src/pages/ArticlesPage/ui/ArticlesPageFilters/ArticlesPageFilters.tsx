@@ -1,6 +1,6 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
-import { memo, useCallback, useMemo } from 'react';
+import { memo, useCallback } from 'react';
 import {
     ArticleSortField, ArticleSortSelector, ArticleTypeTabs, ArticleView, ArticleViewSelector,
 } from 'entities/Article';
@@ -9,13 +9,12 @@ import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { Card } from 'shared/ui/Card/Card';
 import { Input } from 'shared/ui/Input/Input';
 import { SortOrder } from 'shared/types';
-import { getArticlesPageSort } from 'pages/ArticlesPage/model/selectors/getArticlesPageSort';
-import { getArticlesPageOrder } from 'pages/ArticlesPage/model/selectors/getArticlesPageOrder';
-import { getArticlesPageSearch } from 'pages/ArticlesPage/model/selectors/getArticlesPageSearch';
 import { useDebounce } from 'shared/lib/hooks/useDebounce/useDebounce';
-import { TabItem, Tabs } from 'shared/ui/Tabs/Tabs';
 import { ArticleType } from 'entities/Article/model/types/article';
-import { getArticlesPageType } from 'pages/ArticlesPage/model/selectors/getArticlesPageType';
+import { getArticlesPageSort } from '../../model/selectors/getArticlesPageSort';
+import { getArticlesPageOrder } from '../../model/selectors/getArticlesPageOrder';
+import { getArticlesPageSearch } from '../../model/selectors/getArticlesPageSearch';
+import { getArticlesPageType } from '../../model/selectors/getArticlesPageType';
 import { fetchArticlesList } from '../../model/services/fetchArticlesList/fetchArticlesList';
 import { getArticlesPageView } from '../../model/selectors/getArticlesPageView';
 import { articlesPageActions } from '../../model/slices/articlesPageSlice';
