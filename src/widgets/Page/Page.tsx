@@ -3,7 +3,7 @@ import {
     memo, MutableRefObject, ReactNode, useRef, UIEvent,
 } from 'react';
 import { useInfiniteScroll } from 'shared/lib/hooks/useInfiniteScroll/useInfiniteScroll';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { getUIScrollByPath, uiActions } from 'features/UI';
 import { useLocation } from 'react-router-dom';
@@ -53,7 +53,7 @@ export const Page = memo((props: PageProps) => {
     }, 500);
 
     return (
-        <section
+        <main
             ref={wrapperRef}
             className={classNames(classes.Page, {}, [className])}
             onScroll={onScroll}
@@ -61,6 +61,6 @@ export const Page = memo((props: PageProps) => {
         >
             {children}
             {onScrollEnd && <div className={classes.trigger} ref={triggerRef} />}
-        </section>
+        </main>
     );
 });
