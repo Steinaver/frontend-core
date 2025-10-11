@@ -20,8 +20,8 @@
 .loki/report.html
 .loki/report.json
 
-# Unit test reports
-/reports/unit
+# test reports
+/reports
 
 # testing
 /coverage/
