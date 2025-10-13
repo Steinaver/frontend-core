@@ -2,14 +2,14 @@ import { useTranslation } from 'react-i18next';
 import { memo } from 'react';
 import { Page } from 'widgets/Page/Page';
 
-const AboutPage = memo(() => {
-    const { t } = useTranslation('about');
+const ForbiddenPage = memo(() => {
+    const { t } = useTranslation('translation');
 
     return (
         <Page>
-            {t('about_us')}
+            {t('forbidden_page')}
         </Page>
     );
 });
 
-export default AboutPage;
+export default ForbiddenPage;

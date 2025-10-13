@@ -35,5 +35,7 @@
     "creating_article": "Creating a new article",
     "editing_article": "Editing an article with id =",
     "logo": "React App",
-    "create_article": "Create an article"
+    "create_article": "Create an article",
+    "admin_page": "Admin panel",
+    "forbidden_page": "You do not have access to this page"
 }

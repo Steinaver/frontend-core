@@ -1,6 +1,7 @@
 {
   "": "",
   "about_us": "about_us",
+  "admin_page": "admin_page",
   "age": "age",
   "all_articles": "all_articles",
   "art": "art",
@@ -26,6 +27,7 @@
   "edit": "edit",
   "editing_article": "editing_article",
   "firstname": "firstname",
+  "forbidden_page": "forbidden_page",
   "go_back": "go_back",
   "in": "in",
   "incorrect_age": "incorrect_age",
