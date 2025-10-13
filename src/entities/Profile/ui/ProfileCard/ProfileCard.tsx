@@ -6,7 +6,6 @@ import { Loader } from 'shared/ui/Loader/Loader';
 import { Avatar } from 'shared/ui/Avatar/Avatar';
 import { Currency, CurrencySelect } from 'entities/Currency';
 import { Country, CountrySelect } from 'entities/Country';
-import AvatarStorybook from 'shared/assets/tests/storybook.jpg';
 import { VStack } from 'shared/ui/Stack/VStack/VStack';
 import { HStack } from 'shared/ui/Stack/HStack/HStack';
 import { Profile } from '../../model/types/profile';
@@ -74,11 +73,6 @@ export const ProfileCard = (props: ProfileCardProps) => {
 
     return (
         <VStack gap="8" max className={classNames(classes.ProfileCard, mods, [className])}>
-            {__PROJECT__ === 'storybook' && (
-                <HStack justify="center" max>
-                    <Avatar src={AvatarStorybook} />
-                </HStack>
-            )}
             {data?.avatar && (
                 <HStack justify="center" max>
                     <Avatar src={data?.avatar} />
@@ -90,6 +84,7 @@ export const ProfileCard = (props: ProfileCardProps) => {
                 className={classes.input}
                 onChange={onChangeFirstname}
                 readonly={readonly}
+                data-testid="ProfileCard.firstname"
             />
             <Input
                 value={data?.lastname}
@@ -97,6 +92,7 @@ export const ProfileCard = (props: ProfileCardProps) => {
                 className={classes.input}
                 onChange={onChangeLastname}
                 readonly={readonly}
+                data-testid="ProfileCard.lastname"
             />
             <Input
                 value={data?.age}
