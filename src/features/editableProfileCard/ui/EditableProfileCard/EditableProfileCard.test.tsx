@@ -4,9 +4,6 @@ import { Currency } from 'entities/Currency';
 import { Country } from 'entities/Country';
 import userEvent from '@testing-library/user-event';
 import { screen } from '@testing-library/react';
-import {
-    EditableProfileCardHeader,
-} from 'features/editableProfileCard/ui/EditableProfileCardHeader/EditableProfileCardHeader';
 import { $api } from 'shared/api/api';
 import { profileReducer } from '../../model/slice/profileSlice';
 import { EditableProfileCard } from './EditableProfileCard';
