@@ -37,5 +37,8 @@
     "logo": "React App",
     "create_article": "Создать статью",
     "admin_page": "Панель администратора",
-    "forbidden_page": "У вас нет доступа к этой странице"
+    "forbidden_page": "У вас нет доступа к этой странице",
+    "your_feedback": "Ваш отзыв",
+    "close": "Закрыть",
+    "send": "Отправить"
 }

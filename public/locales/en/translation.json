@@ -37,5 +37,8 @@
     "logo": "React App",
     "create_article": "Create an article",
     "admin_page": "Admin panel",
-    "forbidden_page": "You do not have access to this page"
+    "forbidden_page": "You do not have access to this page",
+    "your_feedback": "Your feedback",
+    "close": "Close",
+    "send": "Send"
 }
