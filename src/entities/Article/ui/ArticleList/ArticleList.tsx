@@ -42,7 +42,6 @@ export const ArticleList = memo((props: ArticleListProps) => {
     }
 
     return (
-
         <div
             className={classNames(classes.ArticleList, {}, [className, classes[view]])}
         >
