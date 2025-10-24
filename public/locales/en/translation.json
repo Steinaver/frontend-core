@@ -40,5 +40,8 @@
     "forbidden_page": "You do not have access to this page",
     "your_feedback": "Your feedback",
     "close": "Close",
-    "send": "Send"
+    "send": "Send",
+    "rate_article": "Rate the article",
+    "article_feedback": "Leave your feedback on the article, it will help improve the quality",
+    "rating_thanks": "Thanks for the feedback!"
 }

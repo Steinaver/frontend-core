@@ -67,5 +67,8 @@
   "Вы ввели неверный логин или пароль": "Вы ввели неверный логин или пароль",
     "your_feedback": "your_feedback",
   "close": "close",
-  "send": "send"
+  "send": "send",
+    "rate_article": "rate_article",
+  "article_feedback": "article_feedback",
+    "rating_thanks": "rating_thanks"
 }
