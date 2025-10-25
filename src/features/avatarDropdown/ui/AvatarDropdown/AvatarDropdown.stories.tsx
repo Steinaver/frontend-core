@@ -1,9 +1,12 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { AvatarDropdown } from './AvatarDropdown';
+import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
+import { UserRole } from '@/entities/User';
+import avatar from '@/shared/assets/tests/storybook.jpg';
 
 export default {
-    title: 'app/AvatarDropdown',
+    title: 'features/AvatarDropdown',
     component: AvatarDropdown,
     argTypes: {
         backgroundColor: { control: 'color' },
@@ -14,3 +17,13 @@ const Template: ComponentStory<typeof AvatarDropdown> = (args) => <AvatarDropdow
 
 export const Primary = Template.bind({});
 Primary.args = {};
+Primary.decorators = [StoreDecorator({
+    user: {
+        authData: {
+            id: '1',
+            username: 'frontender',
+            roles: [UserRole.ADMIN],
+            avatar: '',
+        },
+    },
+})];
