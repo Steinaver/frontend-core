@@ -22,7 +22,7 @@ module.exports = {
         '@typescript-eslint',
         'i18next',
         'react-hooks',
-        'eslint-path-checker',
+        'react-project-plugin',
     ],
     rules: {
         'react/jsx-indent': [2, 4],
@@ -74,7 +74,7 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'operator-linebreak': 'off',
         'arrow-body-style': 'off',
-        'eslint-path-checker/path-checker': 'error',
+        'react-project-plugin/path-checker': ['error', { alias: '@' }],
     },
     globals: {
         __IS_DEV__: true,
