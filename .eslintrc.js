@@ -75,7 +75,13 @@ module.exports = {
         'operator-linebreak': 'off',
         'arrow-body-style': 'off',
         'react-project-plugin/path-checker': ['error', { alias: '@' }],
-        'react-project-plugin/public-api-imports': ['error', { alias: '@' }],
+        'react-project-plugin/public-api-imports': [
+            'error',
+            {
+                alias: '@',
+                testFilesPatterns: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx'],
+            },
+        ],
     },
     globals: {
         __IS_DEV__: true,
