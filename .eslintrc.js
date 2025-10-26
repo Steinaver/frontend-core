@@ -75,6 +75,7 @@ module.exports = {
         'operator-linebreak': 'off',
         'arrow-body-style': 'off',
         'react-project-plugin/path-checker': ['error', { alias: '@' }],
+        'react-project-plugin/public-api-imports': ['error', { alias: '@' }],
     },
     globals: {
         __IS_DEV__: true,

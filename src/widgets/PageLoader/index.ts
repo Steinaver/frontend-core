@@ -1,3 +1,3 @@
 export {
     PageLoader,
-} from './ui/PageLoader';
+} from './ui/PageLoader/PageLoader';
