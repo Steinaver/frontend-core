@@ -7,7 +7,6 @@ import { NotificationList } from '@/entities/Notification';
 import { Popover } from '@/shared/ui/Popups';
 import { Icon } from '@/shared/ui/Icon';
 import { Drawer } from '@/shared/ui/Drawer';
-import { AnimationProvider } from '@/shared/lib/components/AnimationProvider';
 import classes from './NotificationButton.module.scss';
 
 interface NotificationButtonProps {
