@@ -9,9 +9,9 @@ import classes from './ArticleSortSelector.module.scss';
 interface ArticleSortSelectorProps {
     className?: string;
     sort: ArticleSortField;
-order: SortOrder;
-onChangeOrder: (newOrder: SortOrder) => void;
-onChangeSort: (newSort: ArticleSortField) => void;
+    order: SortOrder;
+    onChangeOrder: (newOrder: SortOrder) => void;
+    onChangeSort: (newSort: ArticleSortField) => void;
 }
 
 export const ArticleSortSelector = memo((props: ArticleSortSelectorProps) => {
