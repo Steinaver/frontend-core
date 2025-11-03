@@ -6,7 +6,7 @@ const ForbiddenPage = memo(() => {
     const { t } = useTranslation('translation');
 
     return (
-        <Page>
+        <Page data-testid="ForbiddenPage">
             {t('forbidden_page')}
         </Page>
     );
