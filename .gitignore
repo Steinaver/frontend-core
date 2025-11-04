@@ -21,7 +21,7 @@
 .loki/report.json
 
 # test reports
-/reports
+/reports/unit
 
 # testing
 /coverage/

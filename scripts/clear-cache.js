@@ -1,5 +1,5 @@
-import { rm } from 'fs/promises';
-import path from 'path';
+const path = require('path');
+const { rm } = require('fs/promises');
 
 async function clearCache() {
     const cachePath = path.resolve('..', 'node_modules', '.cache');
