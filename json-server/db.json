@@ -622,6 +622,15 @@
         "MANAGER"
       ],
       "avatar": "https://cdn-icons-png.flaticon.com/512/9385/9385289.png"
+    },
+    {
+      "id": "4",
+      "username": "testuser",
+      "password": "123",
+      "roles": [
+        "ADMIN"
+      ],
+      "avatar": "https://cdn-icons-png.flaticon.com/512/9385/9385289.png"
     }
   ],
   "profile": [
