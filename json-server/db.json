@@ -655,6 +655,17 @@
       "city": "New York",
       "username": "admin123",
       "avatar": "https://cdn-icons-png.flaticon.com/512/9385/9385289.png"
+    },
+    {
+      "id": "4",
+      "first": "test",
+      "lastname": "user",
+      "age": 32,
+      "currency": "USD",
+      "country": "Ukraine",
+      "city": "Kyiv",
+      "username": "testuser",
+      "avatar": "https://cdn-icons-png.flaticon.com/512/9385/9385289.png"
     }
   ],
   "article-ratings": [

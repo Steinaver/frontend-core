@@ -1,4 +1,3 @@
-export {};
 /*
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
@@ -19,3 +18,6 @@ export const Primary = Template.bind({});
 Primary.args = {};
 Primary.decorators = [StoreDecorator({})];
 */
+
+// eslint-disable-next-line storybook/story-exports
+export default {};
