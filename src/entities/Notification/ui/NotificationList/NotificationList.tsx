@@ -11,9 +11,7 @@ interface NotificationListProps {
 }
 
 export const NotificationList = memo((props: NotificationListProps) => {
-    const {
-        className,
-    } = props;
+    const { className } = props;
 
     const { data, isLoading } = useNotifications(null, {
         pollingInterval: 10000,
@@ -24,7 +22,9 @@ export const NotificationList = memo((props: NotificationListProps) => {
             <VStack
                 gap="16"
                 max
-                className={classNames(classes.NotificationList, {}, [className])}
+                className={classNames(classes.NotificationList, {}, [
+                    className,
+                ])}
             >
                 <Skeleton width="100%" border="8px" height="80px" />
                 <Skeleton width="100%" border="8px" height="80px" />

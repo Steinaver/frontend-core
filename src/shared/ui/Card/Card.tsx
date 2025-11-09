@@ -1,6 +1,4 @@
-import {
-    HTMLAttributes, memo, ReactNode,
-} from 'react';
+import { HTMLAttributes, memo, ReactNode } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import classes from './Card.module.scss';
 
@@ -27,7 +25,10 @@ export const Card = memo((props: CardProps) => {
 
     return (
         <div
-            className={classNames(classes.Card, { [classes.max]: max }, [className, classes[theme]])}
+            className={classNames(classes.Card, { [classes.max]: max }, [
+                className,
+                classes[theme],
+            ])}
             {...otherProps}
         >
             {children}

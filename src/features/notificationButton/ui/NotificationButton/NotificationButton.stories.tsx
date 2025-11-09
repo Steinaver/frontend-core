@@ -10,11 +10,17 @@ export default {
         backgroundColor: { control: 'color' },
     },
     decorators: [
-        (Story) => <div style={{ display: 'flex', justifyContent: 'flex-end' }}><Story /></div>,
+        (Story) => (
+            <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+                <Story />
+            </div>
+        ),
     ],
 } as ComponentMeta<typeof NotificationButton>;
 
-const Template: ComponentStory<typeof NotificationButton> = (args) => <NotificationButton {...args} />;
+const Template: ComponentStory<typeof NotificationButton> = (args) => (
+    <NotificationButton {...args} />
+);
 
 export const Primary = Template.bind({});
 Primary.args = {};

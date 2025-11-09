@@ -20,7 +20,13 @@ describe('Navigate to the profile page', () => {
         const newFirstname = 'new';
         const newLastname = 'lastname';
         cy.updateProfile(newFirstname, newLastname);
-        cy.getByTestId('ProfileCard.firstname').should('have.value', newFirstname);
-        cy.getByTestId('ProfileCard.lastname').should('have.value', newLastname);
+        cy.getByTestId('ProfileCard.firstname').should(
+            'have.value',
+            newFirstname,
+        );
+        cy.getByTestId('ProfileCard.lastname').should(
+            'have.value',
+            newLastname,
+        );
     });
 });

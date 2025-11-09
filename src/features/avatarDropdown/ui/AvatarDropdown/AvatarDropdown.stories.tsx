@@ -11,21 +11,29 @@ export default {
         backgroundColor: { control: 'color' },
     },
     decorators: [
-        (Story) => <div style={{ display: 'flex', justifyContent: 'flex-end' }}><Story /></div>,
+        (Story) => (
+            <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+                <Story />
+            </div>
+        ),
     ],
 } as ComponentMeta<typeof AvatarDropdown>;
 
-const Template: ComponentStory<typeof AvatarDropdown> = (args) => <AvatarDropdown {...args} />;
+const Template: ComponentStory<typeof AvatarDropdown> = (args) => (
+    <AvatarDropdown {...args} />
+);
 
 export const Primary = Template.bind({});
 Primary.args = {};
-Primary.decorators = [StoreDecorator({
-    user: {
-        authData: {
-            id: '1',
-            username: 'frontender',
-            roles: [UserRole.ADMIN],
-            avatar: '',
+Primary.decorators = [
+    StoreDecorator({
+        user: {
+            authData: {
+                id: '1',
+                username: 'frontender',
+                roles: [UserRole.ADMIN],
+                avatar: '',
+            },
         },
-    },
-})];
+    }),
+];

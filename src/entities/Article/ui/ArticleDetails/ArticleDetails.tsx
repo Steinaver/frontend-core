@@ -2,7 +2,10 @@ import { useTranslation } from 'react-i18next';
 import { memo, useCallback, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { DynamicModuleLoader, ReducersList } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
+import {
+    DynamicModuleLoader,
+    ReducersList,
+} from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { Text, TextAlign, TextSize } from '@/shared/ui/Text';
 import { Skeleton } from '@/shared/ui/Skeleton';
@@ -19,9 +22,7 @@ import { ArticleBlock } from '../../model/types/article';
 import { fetchArticleById } from '../../model/services/fetchArticleById/fetchArticleById';
 import classes from './ArticleDetails.module.scss';
 import { articleDetailsReducer } from '../../model/slice/articleDetailsSlice';
-import {
-    getArticleDetailsIsLoading,
-} from '../../model/selectors/getArticleDetailsIsLoading/getArticleDetailsIsLoading';
+import { getArticleDetailsIsLoading } from '../../model/selectors/getArticleDetailsIsLoading/getArticleDetailsIsLoading';
 import { getArticleDetailsData } from '../../model/selectors/getArticleDetailsData/getArticleDetailsData';
 import { getArticleDetailsError } from '../../model/selectors/getArticleDetailsError/getArticleDetailsError';
 
@@ -35,10 +36,7 @@ const reducers: ReducersList = {
 };
 
 export const ArticleDetails = memo((props: ArticleDetailsProps) => {
-    const {
-        className,
-        id,
-    } = props;
+    const { className, id } = props;
 
     const { t } = useTranslation('article-details');
     const dispatch = useAppDispatch();
@@ -48,32 +46,32 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
 
     const renderBlock = useCallback((block: ArticleBlock) => {
         switch (block.type) {
-        case ArticleBlockType.CODE:
-            return (
-                <ArticleCodeBlockComponent
-                    key={block.id}
-                    className={classes.block}
-                    block={block}
-                />
-            );
-        case ArticleBlockType.IMAGE:
-            return (
-                <ArticleImageBlockComponent
-                    key={block.id}
-                    className={classes.block}
-                    block={block}
-                />
-            );
-        case ArticleBlockType.TEXT:
-            return (
-                <ArticleTextBlockComponent
-                    key={block.id}
-                    className={classes.block}
-                    block={block}
-                />
-            );
-        default:
-            return null;
+            case ArticleBlockType.CODE:
+                return (
+                    <ArticleCodeBlockComponent
+                        key={block.id}
+                        className={classes.block}
+                        block={block}
+                    />
+                );
+            case ArticleBlockType.IMAGE:
+                return (
+                    <ArticleImageBlockComponent
+                        key={block.id}
+                        className={classes.block}
+                        block={block}
+                    />
+                );
+            case ArticleBlockType.TEXT:
+                return (
+                    <ArticleTextBlockComponent
+                        key={block.id}
+                        className={classes.block}
+                        block={block}
+                    />
+                );
+            default:
+                return null;
         }
     }, []);
 
@@ -88,19 +86,33 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
     if (isLoading) {
         content = (
             <>
-                <Skeleton className={classes.avatar} width={200} height={200} border="50%" />
+                <Skeleton
+                    className={classes.avatar}
+                    width={200}
+                    height={200}
+                    border="50%"
+                />
                 <Skeleton className={classes.title} width={300} height={32} />
-                <Skeleton className={classes.skeleton} width={600} height={24} />
-                <Skeleton className={classes.skeleton} width="100%" height={200} />
-                <Skeleton className={classes.skeleton} width="100%" height={200} />
+                <Skeleton
+                    className={classes.skeleton}
+                    width={600}
+                    height={24}
+                />
+                <Skeleton
+                    className={classes.skeleton}
+                    width="100%"
+                    height={200}
+                />
+                <Skeleton
+                    className={classes.skeleton}
+                    width="100%"
+                    height={200}
+                />
             </>
         );
     } else if (error) {
         content = (
-            <Text
-                align={TextAlign.CENTER}
-                title={t('unexpected_error')}
-            />
+            <Text align={TextAlign.CENTER} title={t('unexpected_error')} />
         );
     } else {
         content = (
@@ -112,11 +124,7 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
                         className={classes.avatar}
                     />
                 </HStack>
-                <VStack
-                    gap="4"
-                    max
-                    data-testid="ArticleDetails.Info"
-                >
+                <VStack gap="4" max data-testid="ArticleDetails.Info">
                     <Text
                         className={classes.title}
                         title={article?.title}
@@ -139,7 +147,11 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
 
     return (
         <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
-            <VStack gap="16" max className={classNames(classes.ArticleDetails, {}, [className])}>
+            <VStack
+                gap="16"
+                max
+                className={classNames(classes.ArticleDetails, {}, [className])}
+            >
                 {content}
             </VStack>
         </DynamicModuleLoader>

@@ -32,7 +32,10 @@ const gapClasses: Record<FlexGap, string> = {
     32: classes.gap32,
 };
 
-type DivProps = DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
+type DivProps = DetailedHTMLProps<
+    HTMLAttributes<HTMLDivElement>,
+    HTMLDivElement
+>;
 
 export interface FlexProps extends DivProps {
     className?: string;
@@ -69,7 +72,10 @@ export const Flex = (props: FlexProps) => {
     };
 
     return (
-        <div className={classNames(classes.Flex, mods, additionalClasses)} {...otherProps}>
+        <div
+            className={classNames(classes.Flex, mods, additionalClasses)}
+            {...otherProps}
+        >
             {children}
         </div>
     );

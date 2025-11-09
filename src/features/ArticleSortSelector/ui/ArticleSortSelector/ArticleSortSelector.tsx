@@ -15,44 +15,46 @@ interface ArticleSortSelectorProps {
 }
 
 export const ArticleSortSelector = memo((props: ArticleSortSelectorProps) => {
-    const {
-        className,
-        sort,
-        order,
-        onChangeOrder,
-        onChangeSort,
-    } = props;
+    const { className, sort, order, onChangeOrder, onChangeSort } = props;
 
     const { t } = useTranslation('translation');
 
-    const orderOptions = useMemo<SelectOption<SortOrder>[]>(() => [
-        {
-            value: 'asc',
-            content: t('ascend'),
-        },
-        {
-            value: 'desc',
-            content: t('descend'),
-        },
-    ], [t]);
+    const orderOptions = useMemo<SelectOption<SortOrder>[]>(
+        () => [
+            {
+                value: 'asc',
+                content: t('ascend'),
+            },
+            {
+                value: 'desc',
+                content: t('descend'),
+            },
+        ],
+        [t],
+    );
 
-    const sortFieldOptions = useMemo<SelectOption<ArticleSortField>[]>(() => [
-        {
-            value: ArticleSortField.CREATED,
-            content: t('creation_date'),
-        },
-        {
-            value: ArticleSortField.TITLE,
-            content: t('title'),
-        },
-        {
-            value: ArticleSortField.VIEWS,
-            content: t('views'),
-        },
-    ], [t]);
+    const sortFieldOptions = useMemo<SelectOption<ArticleSortField>[]>(
+        () => [
+            {
+                value: ArticleSortField.CREATED,
+                content: t('creation_date'),
+            },
+            {
+                value: ArticleSortField.TITLE,
+                content: t('title'),
+            },
+            {
+                value: ArticleSortField.VIEWS,
+                content: t('views'),
+            },
+        ],
+        [t],
+    );
 
     return (
-        <div className={classNames(classes.ArticleSortSelector, {}, [className])}>
+        <div
+            className={classNames(classes.ArticleSortSelector, {}, [className])}
+        >
             <Select<ArticleSortField>
                 options={sortFieldOptions}
                 label={t('sort_by')}

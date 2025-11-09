@@ -24,11 +24,17 @@ export const Counter = () => {
         <div>
             <h1 data-testid="value-title">{counterValue}</h1>
             {/* eslint-disable-next-line i18next/no-literal-string */}
-            <Button onClick={handleAddFive} data-testid="increment-btn5">add 5</Button>
+            <Button onClick={handleAddFive} data-testid="increment-btn5">
+                add 5
+            </Button>
             {/* eslint-disable-next-line i18next/no-literal-string */}
-            <Button onClick={handleInc} data-testid="increment-btn">increment</Button>
+            <Button onClick={handleInc} data-testid="increment-btn">
+                increment
+            </Button>
             {/* eslint-disable-next-line i18next/no-literal-string */}
-            <Button onClick={handleDec} data-testid="decrement-btn">decrement</Button>
+            <Button onClick={handleDec} data-testid="decrement-btn">
+                decrement
+            </Button>
         </div>
     );
 };

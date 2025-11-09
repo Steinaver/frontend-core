@@ -10,7 +10,9 @@ import '@/shared/config/i18n/i18n';
 const container = document.getElementById('root');
 
 if (!container) {
-    throw new Error('Root container not found. Failed to mount React application.');
+    throw new Error(
+        'Root container not found. Failed to mount React application.',
+    );
 }
 
 const root = createRoot(container);

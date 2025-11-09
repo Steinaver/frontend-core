@@ -11,10 +11,7 @@ interface NotificationItemProps {
 }
 
 export const NotificationItem = memo((props: NotificationItemProps) => {
-    const {
-        className,
-        item,
-    } = props;
+    const { className, item } = props;
 
     const content = (
         <Card
@@ -27,7 +24,12 @@ export const NotificationItem = memo((props: NotificationItemProps) => {
 
     if (item.href) {
         return (
-            <a className={classes.link} target="_blank" href={item.href} rel="noreferrer">
+            <a
+                className={classes.link}
+                target="_blank"
+                href={item.href}
+                rel="noreferrer"
+            >
                 {content}
             </a>
         );

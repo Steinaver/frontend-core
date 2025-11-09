@@ -17,9 +17,16 @@ interface ArticleListProps {
 }
 
 function getSkeletons(view: ArticleView) {
-    return Array.from({ length: view === ArticleView.SMALL ? 9 : 3 }, (_, index) => (
-        <ArticleListItemSkeleton className={classes.card} key={index} view={view} />
-    ));
+    return Array.from(
+        { length: view === ArticleView.SMALL ? 9 : 3 },
+        (_, index) => (
+            <ArticleListItemSkeleton
+                className={classes.card}
+                key={index}
+                view={view}
+            />
+        ),
+    );
 }
 
 export const ArticleList = memo((props: ArticleListProps) => {
@@ -35,7 +42,12 @@ export const ArticleList = memo((props: ArticleListProps) => {
 
     if (!isLoading && !articles.length) {
         return (
-            <div className={classNames(classes.ArticleList, {}, [className, classes[view]])}>
+            <div
+                className={classNames(classes.ArticleList, {}, [
+                    className,
+                    classes[view],
+                ])}
+            >
                 <Text size={TextSize.L} title={t('articles_not_found')} />
             </div>
         );
@@ -43,7 +55,10 @@ export const ArticleList = memo((props: ArticleListProps) => {
 
     return (
         <div
-            className={classNames(classes.ArticleList, {}, [className, classes[view]])}
+            className={classNames(classes.ArticleList, {}, [
+                className,
+                classes[view],
+            ])}
             data-testid="ArticleList"
         >
             {articles.map((item) => (

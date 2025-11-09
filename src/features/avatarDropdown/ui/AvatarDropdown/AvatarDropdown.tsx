@@ -5,7 +5,10 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import { Dropdown } from '@/shared/ui/Popups';
 import { Avatar } from '@/shared/ui/Avatar';
 import {
-    getUserAuthData, isUserAdmin, isUserManager, userActions,
+    getUserAuthData,
+    isUserAdmin,
+    isUserManager,
+    userActions,
 } from '@/entities/User';
 import { getRouteAdmin, getRouteProfile } from '@/shared/const/router';
 
@@ -14,9 +17,7 @@ interface AvatarDropdownProps {
 }
 
 export const AvatarDropdown = memo((props: AvatarDropdownProps) => {
-    const {
-        className,
-    } = props;
+    const { className } = props;
 
     const { t } = useTranslation('translation');
     const dispatch = useDispatch();
@@ -39,10 +40,14 @@ export const AvatarDropdown = memo((props: AvatarDropdownProps) => {
             className={classNames('', {}, [className])}
             direction="bottom left"
             items={[
-                ...(isAdminPanelAvailable ? [{
-                    content: t('admin_page'),
-                    href: getRouteAdmin(),
-                }] : []),
+                ...(isAdminPanelAvailable
+                    ? [
+                          {
+                              content: t('admin_page'),
+                              href: getRouteAdmin(),
+                          },
+                      ]
+                    : []),
                 {
                     content: t('profile_page'),
                     href: getRouteProfile(authData.id),
@@ -52,7 +57,9 @@ export const AvatarDropdown = memo((props: AvatarDropdownProps) => {
                     onClick: onLogout,
                 },
             ]}
-            trigger={<Avatar fallbackInverted size={30} src={authData.avatar} />}
+            trigger={
+                <Avatar fallbackInverted size={30} src={authData.avatar} />
+            }
         />
     );
 });

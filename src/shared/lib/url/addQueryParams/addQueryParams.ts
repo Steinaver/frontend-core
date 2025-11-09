@@ -12,7 +12,7 @@ export function getQueryParams(params: OptionalRecord<string, string>) {
 /**
  * Function for adding query string parameters to a URL
  * @param params
-*/
+ */
 
 export function addQueryParams(params: OptionalRecord<string, string>) {
     window.history.pushState(null, '', getQueryParams(params));

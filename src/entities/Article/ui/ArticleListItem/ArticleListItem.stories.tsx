@@ -11,11 +11,17 @@ export default {
         backgroundColor: { control: 'color' },
     },
     decorators: [
-        (Story) => <div style={{ display: 'flex' }}><Story /></div>,
+        (Story) => (
+            <div style={{ display: 'flex' }}>
+                <Story />
+            </div>
+        ),
     ],
 } as ComponentMeta<typeof ArticleListItem>;
 
-const Template: ComponentStory<typeof ArticleListItem> = (args) => <ArticleListItem {...args} />;
+const Template: ComponentStory<typeof ArticleListItem> = (args) => (
+    <ArticleListItem {...args} />
+);
 
 const article = {
     id: '1',
@@ -29,12 +35,7 @@ const article = {
         username: 'frontendev',
         avatar: '',
     },
-    type: [
-        'IT',
-        'LOREM',
-        'USSIDDA',
-        'SDFAFAFA',
-    ],
+    type: ['IT', 'LOREM', 'USSIDDA', 'SDFAFAFA'],
     blocks: [
         {
             id: '1',

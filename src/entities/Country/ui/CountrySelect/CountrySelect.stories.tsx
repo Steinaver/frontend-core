@@ -9,11 +9,17 @@ export default {
         backgroundColor: { control: 'color' },
     },
     decorators: [
-        (Story) => <div style={{ padding: 300 }}><Story /></div>,
+        (Story) => (
+            <div style={{ padding: 300 }}>
+                <Story />
+            </div>
+        ),
     ],
 } as ComponentMeta<typeof CountrySelect>;
 
-const Template: ComponentStory<typeof CountrySelect> = (args) => <CountrySelect {...args} />;
+const Template: ComponentStory<typeof CountrySelect> = (args) => (
+    <CountrySelect {...args} />
+);
 
 export const Primary = Template.bind({});
 Primary.args = {};

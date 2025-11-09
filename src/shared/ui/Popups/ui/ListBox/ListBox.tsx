@@ -45,7 +45,10 @@ export function ListBox(props: ListBoxProps) {
             <HListBox
                 disabled={readonly}
                 as="div"
-                className={classNames(classes.ListBox, {}, [className, popupClasses.popup])}
+                className={classNames(classes.ListBox, {}, [
+                    className,
+                    popupClasses.popup,
+                ])}
                 value={value}
                 onChange={onChange}
             >
@@ -53,11 +56,11 @@ export function ListBox(props: ListBoxProps) {
                     disabled={readonly}
                     className={classes.trigger}
                 >
-                    <Button disabled={readonly}>
-                        {value ?? defaultValue}
-                    </Button>
+                    <Button disabled={readonly}>{value ?? defaultValue}</Button>
                 </HListBox.Button>
-                <HListBox.Options className={classNames(classes.options, {}, optionsClasses)}>
+                <HListBox.Options
+                    className={classNames(classes.options, {}, optionsClasses)}
+                >
                     {items?.map((item) => (
                         <HListBox.Option
                             key={item.value}
@@ -67,13 +70,10 @@ export function ListBox(props: ListBoxProps) {
                         >
                             {({ active, selected }) => (
                                 <li
-                                    className={classNames(
-                                        classes.item,
-                                        {
-                                            [popupClasses.active]: active,
-                                            [popupClasses.disabled]: item.disabled,
-                                        },
-                                    )}
+                                    className={classNames(classes.item, {
+                                        [popupClasses.active]: active,
+                                        [popupClasses.disabled]: item.disabled,
+                                    })}
                                 >
                                     {selected && '!!!'}
                                     {item.content}
