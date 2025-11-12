@@ -1,6 +1,7 @@
 const fs = require('fs');
 const jsonServer = require('json-server');
 const path = require('path');
+const http = require('http');
 
 const server = jsonServer.create();
 
@@ -21,7 +22,9 @@ server.use(async (req, res, next) => {
 server.post('/login', (req, res) => {
     try {
         const { username, password } = req.body;
-        const db = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'db.json'), 'UTF-8'));
+        const db = JSON.parse(
+            fs.readFileSync(path.resolve(__dirname, 'db.json'), 'UTF-8'),
+        );
         const { users = [] } = db;
 
         const userFromBd = users.find(
@@ -51,7 +54,9 @@ server.use((req, res, next) => {
 
 server.use(router);
 
-// запуск сервера
-server.listen(8000, () => {
-    console.log('server is running on 8000 port');
+const HTTP_PORT = 8000;
+const httpServer = http.createServer(server);
+
+httpServer.listen(HTTP_PORT, () => {
+    console.log(`server is running on ${HTTP_PORT} port`);
 });
