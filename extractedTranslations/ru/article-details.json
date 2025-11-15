@@ -3,5 +3,6 @@
     "edit": "edit",
     "go_back": "go_back",
     "recommendations": "recommendations",
-    "unexpected_error": "unexpected_error"
+    "unexpected_error": "unexpected_error",
+    "ratings_soon": "ratings_soon"
 }

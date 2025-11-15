@@ -173,6 +173,28 @@ the project uses
 
 ----
 
+### Working with feature-flags
+
+Using feature flags is allowed only through the toggleFeatures helper.
+
+It accepts an options object:
+
+```
+{
+   name: the name of the feature flag,
+   on: a function that will run after the feature is **enabled**,
+   off: a function that will run after the feature is **disabled**
+}
+```
+
+To automatically remove a feature, use the remove-feature.ts script,
+which takes two arguments:
+
+1. The name of the feature flag to be removed
+2. Its state (on / off)
+
+----
+
 ## Entities
 
 - [Article](/src/entities/Article)
