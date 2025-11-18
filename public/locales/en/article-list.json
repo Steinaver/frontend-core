@@ -1,4 +1,6 @@
 {
     "read_more": "Read more...",
-    "unexpected_error": "An error occurred while loading articles"
+    "unexpected_error": "An error occurred while loading articles",
+    "greeting_title": "Welcome to the articles page",
+    "greeting_text": "Here you can search for and view articles on various topics."
 }

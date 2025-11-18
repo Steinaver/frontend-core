@@ -1,4 +1,6 @@
 {
     "read_more": "read_more",
-    "unexpected_error": "unexpected_error"
+    "unexpected_error": "unexpected_error",
+    "greeting_title": "greeting_title",
+    "greeting_text": "greeting_text"
 }
