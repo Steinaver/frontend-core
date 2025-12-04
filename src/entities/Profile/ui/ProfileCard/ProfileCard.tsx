@@ -31,8 +31,6 @@ export interface ProfileCardProps {
     onChangeCountry?: (country: Country) => void;
 }
 
-const Deprecated = (props: ProfileCardProps) => {};
-
 export const ProfileCard = (props: ProfileCardProps) => {
     const { isLoading, error } = props;
 
