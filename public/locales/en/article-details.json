@@ -4,6 +4,8 @@
     "comments": "Comments",
     "go_back": "Back to list",
     "recommendations": "Recommendations",
-    "edit": "Edit",
-    "ratings_soon": "Article ratings will be available soon!"
+    "edit": "Edit article",
+    "ratings_soon": "Article ratings will be available soon!",
+    "{{count}} views_one": "{{count}} view",
+    "{{count}} views_other": "{{count}} views"
 }
