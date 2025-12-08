@@ -43,5 +43,6 @@
     "send": "Send",
     "rate_article": "Rate the article",
     "article_feedback": "Leave your feedback on the article, it will help improve the quality",
-    "rating_thanks": "Thanks for the feedback!"
+    "rating_thanks": "Thanks for the feedback!",
+    "settings": "Settings"
 }
