@@ -14,6 +14,10 @@
     padding: 6px 16px;
     display: flex;
     align-items: center;
+}
+
+.withAddon {
+    padding: 0 16px;
 
     &:hover {
         color: var(--accent-redesigned);
@@ -25,15 +29,15 @@
     }
 }
 
-.withAddon {
-    padding: 0 16px;
-}
-
 .clear {
     padding: 0;
     border: none;
     background: none;
     outline: none;
+
+    &:hover {
+        color: var(--accent-redesigned);
+    }
 }
 
 .filled {
@@ -41,15 +45,38 @@
     border: none;
     outline: none;
     border-radius: 34px;
+
+    &:hover {
+        color: var(--accent-redesigned);
+    }
 }
 
 .outline {
     background: none;
-    border: 2px solid var(--icon-redesigned);
     border-radius: 34px;
 
-    &:hover {
-        border: 2px solid var(--accent-redesigned);
+    &.normal {
+        border: 2px solid var(--icon-redesigned);
+
+        &:hover {
+            border: 2px solid var(--accent-redesigned);
+        }
+    }
+
+    &.success {
+        border: 2px solid var(--save-redesigned);
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &.error {
+        border: 2px solid var(--cancel-redesigned);
+
+        &:hover {
+            opacity: 0.8;
+        }
     }
 }
 
