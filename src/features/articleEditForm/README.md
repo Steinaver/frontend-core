@@ -1,1 +1,1 @@
-## Фича формы изменения статьи
+## Feature for the article edit form

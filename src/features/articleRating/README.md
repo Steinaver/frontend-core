@@ -1,1 +1,1 @@
-## Фича выставления оценки для статьи
+## Feature for setting a rating for an article

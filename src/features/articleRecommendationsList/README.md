@@ -1,1 +1,1 @@
-## Фича со списком рекомендаций статей
+## Feature with a list of recommended articles

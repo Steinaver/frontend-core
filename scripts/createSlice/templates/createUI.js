@@ -6,13 +6,14 @@ const storyTemplate = require('./storyTemplate');
 const styleTemplate = require('./styleTemplate');
 
 module.exports = async (layer, sliceName) => {
-    const resolveUIPath = (...segments) => resolveRoot('src', layer, sliceName, 'ui', ...segments);
+    const resolveUIPath = (...segments) =>
+        resolveRoot('src', layer, sliceName, 'ui', ...segments);
 
     const createUIDir = async () => {
         try {
             await fs.mkdir(resolveUIPath());
         } catch (e) {
-            console.log('Не удалось создать UI директорию');
+            console.log('Failed to create UI directory');
         }
     };
 
@@ -33,7 +34,7 @@ module.exports = async (layer, sliceName) => {
                 styleTemplate(componentName),
             );
         } catch (e) {
-            console.log('Не удалось создать компонент');
+            console.log('Failed to create component');
         }
     };
 

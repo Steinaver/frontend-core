@@ -1,1 +1,1 @@
-## Фича для переключения темы
+## Feature for theme switching

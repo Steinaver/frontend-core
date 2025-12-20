@@ -1,1 +1,1 @@
-## Фича для переключения языка
+## Feature for language switching

@@ -28,7 +28,7 @@ export const DynamicModuleLoader = (props: DynamicModuleLoaderProps) => {
 
         Object.entries(reducers).forEach(([name, reducer]) => {
             const mounted = mountedReducers[name as StateSchemaKey];
-            // Добавляем новый редюсер только если его нет
+            // Add a new reducer only if it does not exist
             if (!mounted) {
                 store.reducerManager.add(name as StateSchemaKey, reducer);
                 dispatch({ type: `@INIT ${name} reducer` });

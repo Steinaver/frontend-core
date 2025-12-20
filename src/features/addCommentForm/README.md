@@ -1,1 +1,1 @@
-## Фича формы добавления комментария
+## Feature for the comment add form

@@ -1,1 +1,1 @@
-## Сущность уведомления
+## Notification entity
